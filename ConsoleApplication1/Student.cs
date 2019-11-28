@@ -20,12 +20,33 @@ namespace ConsoleApplication1
         {
 
         }
-        public Student(string id,string name,float score,string falculty)
+        public Student(string id, string name, float score, string falculty)
         {
             studentID = id;
             fullName = name;
             averageScore = score;
             faculty = falculty;
         }
+        public void InPut()
+        {
+            
+            Console.WriteLine("Nhap Ma SV ");
+            StudentID = Console.ReadLine();
+            Console.WriteLine("Nhap Ten: ");
+            FullName = Console.ReadLine();
+            Console.WriteLine("Nhap DTB: ");
+            AverageScore = float.Parse(Console.ReadLine());
+            Console.WriteLine("Nhap Khoa: ");
+            Faculty = Console.ReadLine();
+        }
+        public void Show()
+        {
+            Console.WriteLine("MSSV: " + this.StudentID);
+            Console.WriteLine("Name: " + this.FullName);
+            Console.WriteLine("DTB: " + this.AverageScore);
+            Console.Write("Khoa: " + this.Faculty +"\n");
+        }
+        
+        
     }
 }
