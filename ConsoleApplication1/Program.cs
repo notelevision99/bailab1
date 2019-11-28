@@ -92,8 +92,7 @@ namespace ConsoleApplication1
         {
             Console.WriteLine("============Xuat DS SINH VIEN===============");
             foreach (Student sv in listStudent)
-            {
-                
+            {               
                 sv.Show();
             }
         }

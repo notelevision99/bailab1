@@ -8,6 +8,7 @@ namespace ConsoleApplication1
 {
     class Student
     {
+        
         private string studentID;
         private string fullName;
         private float averageScore;
@@ -27,6 +28,12 @@ namespace ConsoleApplication1
             averageScore = score;
             faculty = falculty;
         }
+        public Student(string id,string name)
+        {
+            studentID = id;
+            fullName = name;
+        }
+        
         public void InPut()
         {
             
